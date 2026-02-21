@@ -1,0 +1,12 @@
+/* Remove Vite starter styles that force a centered demo layout */
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+body {
+  margin: 0;
+
+}
