@@ -1,20 +1,102 @@
 export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
-      <header className="mx-auto max-w-6xl px-6 py-6 flex items-center justify-between">
-        <div className="font-semibold tracking-tight">Osita Nwankwo</div>
-        <nav className="flex gap-6 text-sm text-zinc-300">
-          <a className="hover:text-white" href="#home">Home</a>
-          <a className="hover:text-white" href="#projects">Projects</a>
-          <a className="hover:text-white" href="#about">About</a>
-          <a className="hover:text-white" href="#contact">Contact</a>
+      <header className="mx-auto max-w-6xl px-6 py-6 flex flex-col items-center gap-6">
+        <div className="text-center font-['Cocogoose'] font-normal text-2xl" style={{ letterSpacing: "-0.08em" }}>Osita Nwankwo</div>
+        <nav
+          aria-label="Main"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "12px",
+            padding: "8px 12px",
+            borderRadius: "9999px",
+            backgroundColor: "#141414",
+            boxShadow: "0 12px 20px 0 rgba(0, 0, 0, 0.04)",
+            fontFamily: "Roboto, system-ui, sans-serif",
+            fontSize: "20px",
+            fontWeight: 400,
+            letterSpacing: "-0.01em",
+            lineHeight: "1.4",
+            fontWeight: 400,
+          }}
+        >
+          <a
+            href="#home"
+            style={{
+              display: "inline-block",
+              padding: "10px 20px",
+              borderRadius: "9999px",
+              backgroundColor: "#ffffff",
+              color: "#141414",
+              textDecoration: "none",
+              border: "1px solid rgba(0,0,0,0.06)",
+            }}
+          >
+            Home
+          </a>
+          <a
+            href="#projects"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "10px 16px",
+              borderRadius: "9999px",
+              color: "#C4C4C4",
+              textDecoration: "none",
+            }}
+          >
+            <span
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                minWidth: "22px",
+                height: "22px",
+                padding: "0 6px",
+                borderRadius: "9999px",
+                backgroundColor: "#4a4a4a",
+                color: "#ffffff",
+                fontSize: "12px",
+                fontWeight: 500,
+              }}
+            >
+              20
+            </span>
+            Projects
+          </a>
+          <a
+            href="#about"
+            style={{
+              display: "inline-block",
+              padding: "10px 16px",
+              borderRadius: "9999px",
+              color: "#C4C4C4",
+              textDecoration: "none",
+            }}
+          >
+            About
+          </a>
+          <a
+            href="#contact"
+            style={{
+              display: "inline-block",
+              padding: "10px 16px",
+              borderRadius: "9999px",
+              color: "#C4C4C4",
+              textDecoration: "none",
+            }}
+          >
+            Contact
+          </a>
         </nav>
       </header>
 
       <main className="mx-auto max-w-6xl px-6">
         <section id="home" className="py-16">
           <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
-            Digital products. Built to scale.
+            Digital products. Built to scale. For SMEs.
           </h1>
           <p className="mt-4 max-w-2xl text-zinc-300">
             UX designer focused on AI agents, integrations, and scalable systems.

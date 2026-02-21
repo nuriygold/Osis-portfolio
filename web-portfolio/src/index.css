@@ -1,8 +1,20 @@
 @import "tailwindcss";
 
+/* Font declaration must be OUTSIDE of body */
+@font-face {
+  font-family: "Cocogoose";
+  src: url("/fonts/Cocogoose-Regular.woff2") format("woff2"),
+       url("/fonts/Cocogoose-Regular.woff") format("woff"),
+       url("/fonts/Cocogoose-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Now your global styles */
 body {
-  background: black !important;
-  color: white;
-  margin-left: 112px;
-  margin-right: 112px;
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, sans-serif;
 }

@@ -116,7 +116,10 @@ function Header({ navLinks }) {
       className="sticky top-0 z-50 bg-[#000000] flex items-center justify-between px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-5 lg:px-12"
       style={{ boxShadow: "0 12px 20px 0 rgba(0, 0, 0, 0.04)" }}
     >
-      <a href="/" className="text-lg font-semibold text-white sm:text-xl md:text-2xl">
+      <a
+        href="/"
+        className="text-center font-['Cocogoose'] font-normal text-2xl text-white"
+      >
         Osita Nwankwo
       </a>
       {/* Desktop Navigation */}
