@@ -32,65 +32,24 @@ const PROJECTS = [
 export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
-      <header className="mx-auto max-w-6xl px-6 py-6 flex flex-col items-center gap-6">
-        <div className="text-center font-['Cocogoose'] font-normal text-2xl" style={{ letterSpacing: "-0.08em" }}>Osita Nwankwo</div>
+      <header className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-5 sm:gap-6 sm:px-6 sm:py-6">
+        <div className="text-center font-['Cocogoose'] text-xl font-normal tracking-[-0.08em] sm:text-2xl">Osita Nwankwo</div>
         <nav
           aria-label="Main"
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "12px",
-            padding: "8px 12px",
-            borderRadius: "9999px",
-            backgroundColor: "#141414",
-            boxShadow: "0 12px 20px 0 rgba(0, 0, 0, 0.04)",
-            fontFamily: "Roboto, system-ui, sans-serif",
-            fontSize: "20px",
-            fontWeight: 400,
-            letterSpacing: "-0.01em",
-            lineHeight: "1.4",
-          }}
+          className="flex w-full max-w-fit flex-wrap items-center justify-center gap-2 rounded-3xl bg-[#141414] px-2 py-2 text-sm font-normal tracking-[-0.01em] sm:gap-3 sm:px-3 sm:text-base"
         >
           <a
             href="#home"
-            style={{
-              display: "inline-block",
-              padding: "10px 20px",
-              borderRadius: "9999px",
-              backgroundColor: "#ffffff",
-              color: "#141414",
-              textDecoration: "none",
-              border: "1px solid rgba(0,0,0,0.06)",
-            }}
+            className="inline-flex rounded-full border border-black/10 bg-white px-3 py-2 text-[#141414] no-underline sm:px-5"
           >
             Home
           </a>
           <a
             href="#projects"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-              padding: "10px 16px",
-              borderRadius: "9999px",
-              color: "#C4C4C4",
-              textDecoration: "none",
-            }}
+            className="flex items-center gap-2 rounded-full px-3 py-2 text-[#C4C4C4] no-underline sm:px-4"
           >
             <span
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                minWidth: "22px",
-                height: "22px",
-                padding: "0 6px",
-                borderRadius: "9999px",
-                backgroundColor: "#4a4a4a",
-                color: "#ffffff",
-                fontSize: "12px",
-                fontWeight: 500,
-              }}
+              className="inline-flex h-[22px] min-w-[22px] items-center justify-center rounded-full bg-[#4a4a4a] px-1.5 text-xs font-medium text-white"
             >
               {PROJECTS.length}
             </span>
@@ -98,34 +57,22 @@ export default function App() {
           </a>
           <a
             href="#about"
-            style={{
-              display: "inline-block",
-              padding: "10px 16px",
-              borderRadius: "9999px",
-              color: "#C4C4C4",
-              textDecoration: "none",
-            }}
+            className="inline-flex rounded-full px-3 py-2 text-[#C4C4C4] no-underline sm:px-4"
           >
             About
           </a>
           <a
             href="#contact"
-            style={{
-              display: "inline-block",
-              padding: "10px 16px",
-              borderRadius: "9999px",
-              color: "#C4C4C4",
-              textDecoration: "none",
-            }}
+            className="inline-flex rounded-full px-3 py-2 text-[#C4C4C4] no-underline sm:px-4"
           >
             Contact
           </a>
         </nav>
       </header>
 
-      <main className="mx-auto max-w-6xl px-6">
+      <main className="mx-auto max-w-6xl px-4 sm:px-6">
         <section id="home" className="py-16">
-          <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
+          <h1 className="text-3xl font-semibold leading-tight sm:text-4xl md:text-6xl">
             Digital products. Built to scale. For SMEs.
           </h1>
           <p className="mt-4 max-w-2xl text-zinc-300">
