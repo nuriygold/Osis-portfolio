@@ -2,17 +2,15 @@
 
 This repository's app lives in `web-portfolio/`. Configure your provider to build from that directory.
 
-## Deployment URL
-
-- **Vercel (this branch/project):** https://osis-portfolio.vercel.app
-
 ## Vercel
+
+Set these in **Project Settings → General**:
 
 - **Root Directory:** `web-portfolio`
 - **Build Command:** `npm run build`
 - **Output Directory:** `dist`
 
-If using `vercel.json`, this repo is configured to build and output from `web-portfolio`.
+The checked-in `vercel.json` matches the command/output values. Keep the Root Directory set to `web-portfolio` in Vercel UI.
 
 ## Netlify
 
@@ -31,6 +29,8 @@ The workflow at `.github/workflows/deploy-pages.yml`:
 - installs dependencies in `web-portfolio`
 - runs `npm run build` in `web-portfolio`
 - publishes `web-portfolio/dist`
+
+If you deploy from a **fork**, make sure GitHub Pages is enabled in that fork's settings and Actions has permission to deploy Pages.
 
 ## CLI deploy scripts
 
