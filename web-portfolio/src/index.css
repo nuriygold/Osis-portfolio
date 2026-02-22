@@ -2,13 +2,10 @@
 
 /* Font declaration must be OUTSIDE of body */
 @font-face {
-  font-family: "Cocogoose";
-  src: url("/fonts/Cocogoose-Regular.woff2") format("woff2"),
-       url("/fonts/Cocogoose-Regular.woff") format("woff"),
-       url("/fonts/Cocogoose-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: 'Cocogoose';
+  src: url('/fonts/cocogoose/Cocogoose Pro-trial.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Now your global styles */
