@@ -18,7 +18,6 @@ export default function App() {
             fontWeight: 400,
             letterSpacing: "-0.01em",
             lineHeight: "1.4",
-            fontWeight: 400,
           }}
         >
           <a
