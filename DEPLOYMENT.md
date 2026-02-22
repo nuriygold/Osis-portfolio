@@ -2,6 +2,10 @@
 
 This repository's app lives in `web-portfolio/`. Configure your provider to build from that directory.
 
+## Deployment URL
+
+- **Vercel (this branch/project):** https://osis-portfolio.vercel.app
+
 ## Vercel
 
 - **Root Directory:** `web-portfolio`
