@@ -1,3 +1,34 @@
+const PROJECTS = [
+  {
+    title: "Mechane AI",
+    summary:
+      "Decision-support experience for automotive diagnostics and service recommendations.",
+    href: "#project-mechane-ai",
+    type: "Case Study",
+  },
+  {
+    title: "Lowe’s Platform",
+    summary:
+      "Unified operations dashboard for orders, job tracking, and delivery visibility.",
+    href: "#project-lowes-platform",
+    type: "Case Study",
+  },
+  {
+    title: "Pro Analytics",
+    summary:
+      "Business insights workspace that helps contractor teams monitor performance.",
+    href: "#project-pro-analytics",
+    type: "Case Study",
+  },
+  {
+    title: "Design Systems",
+    summary:
+      "Component and interaction framework for faster product iteration across teams.",
+    href: "#project-design-systems",
+    type: "Case Study",
+  },
+];
+
 export default function App() {
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
@@ -61,7 +92,7 @@ export default function App() {
                 fontWeight: 500,
               }}
             >
-              20
+              {PROJECTS.length}
             </span>
             Projects
           </a>
@@ -120,17 +151,34 @@ export default function App() {
         <section id="projects" className="py-12 border-t border-zinc-800">
           <h2 className="text-xl font-semibold">Projects</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
-            {["Mechana AI", "Lowe’s Platform", "Pro Analytics", "Design Systems"].map((title) => (
-              <div key={title} className="rounded-2xl border border-zinc-800 p-6 hover:bg-zinc-900/40 transition">
-                <div className="text-sm text-zinc-400">Case Study</div>
-                <div className="mt-2 text-lg font-semibold">{title}</div>
-                <div className="mt-2 text-zinc-300 text-sm">
-                  Short description goes here. (We’ll plug your real copy next.)
-                </div>
-                <div className="mt-4 text-sm text-white">View →</div>
-              </div>
+            {PROJECTS.map((project) => (
+              <article key={project.title} className="rounded-2xl border border-zinc-800 p-6 hover:bg-zinc-900/40 transition">
+                <div className="text-sm text-zinc-400">{project.type}</div>
+                <div className="mt-2 text-lg font-semibold">{project.title}</div>
+                <p className="mt-2 text-zinc-300 text-sm">{project.summary}</p>
+                <a href={project.href} className="mt-4 inline-flex text-sm text-white underline underline-offset-4">
+                  View →
+                </a>
+              </article>
             ))}
           </div>
+        </section>
+
+        <section id="project-mechane-ai" className="py-12 border-t border-zinc-800">
+          <h3 className="text-lg font-semibold">Mechane AI</h3>
+          <p className="mt-3 text-zinc-300 text-sm">Case study summary available on this page for now.</p>
+        </section>
+        <section id="project-lowes-platform" className="py-12 border-t border-zinc-800">
+          <h3 className="text-lg font-semibold">Lowe’s Platform</h3>
+          <p className="mt-3 text-zinc-300 text-sm">Case study summary available on this page for now.</p>
+        </section>
+        <section id="project-pro-analytics" className="py-12 border-t border-zinc-800">
+          <h3 className="text-lg font-semibold">Pro Analytics</h3>
+          <p className="mt-3 text-zinc-300 text-sm">Case study summary available on this page for now.</p>
+        </section>
+        <section id="project-design-systems" className="py-12 border-t border-zinc-800">
+          <h3 className="text-lg font-semibold">Design Systems</h3>
+          <p className="mt-3 text-zinc-300 text-sm">Case study summary available on this page for now.</p>
         </section>
 
         <section id="about" className="py-12 border-t border-zinc-800">
